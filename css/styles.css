@@ -27,14 +27,14 @@ body {
 
 /* HEADER COVER */
 
-#header-cover {
-    padding: 0% 15% 1%;
-    background-image: url('../images/rodfox-cover.jpg');
+#header-cover {    
+    background: url('../images/rodfox-cover.jpg') no-repeat center center fixed;
     background-color: white;
     height: 70vh;
-    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 /* COMPANY */
@@ -178,11 +178,17 @@ footer a:hover {
 @media only screen and (min-width: 600px) {
     #tech-logo {        
         height: 5rem;        
-      }
-  }
+    }
+}
 
-  @media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1150px) {
     .company-title {
         font-size: 2.5rem;
     }
-  }
+}
+  
+@media only screen and (max-width: 750px) {
+    .company-title {
+        margin-top: -30%;
+    }
+}
