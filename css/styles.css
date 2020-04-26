@@ -79,9 +79,10 @@ body {
     margin-right: 15px;
 }
 
-.img-services {
-    max-width: 500px;
+.img-design {
+    max-width: 50%;
 }
+
 
 /* TECH */
 
@@ -189,7 +190,7 @@ footer a:hover {
 @media only screen and (min-width: 600px) {
     #tech-logo {        
         height: 5rem;        
-    }
+    }    
 }
 
 @media only screen and (max-width: 1150px) {
@@ -201,5 +202,8 @@ footer a:hover {
 @media only screen and (max-width: 750px) {
     .company-title {
         margin-top: -30%;
+    }
+    .img-design {
+        max-width: 100%;
     }
 }
