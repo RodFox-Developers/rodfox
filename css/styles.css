@@ -61,7 +61,14 @@ body {
 /*SERVICES*/
 
 #services {
-    padding: 3% 15%;    
+    padding: 3% 10%;  
+    background: url('../images/background-services.png') no-repeat center center;
+    background-color:rgba(255, 255, 255);    
+    -webkit-background-size: initial;
+    -moz-background-size: initial;
+    -o-background-size: initial;
+    background-size: initial;
+    font-size: 1.2rem;
 }
 
 #services ul {
@@ -70,6 +77,10 @@ body {
 
 #services i {
     margin-right: 15px;
+}
+
+.img-services {
+    max-width: 500px;
 }
 
 /* TECH */
@@ -90,7 +101,7 @@ body {
 /* PROJECTS */
 
 #projects {
-    padding: 8% 15%;  
+    padding: 8% 10%;  
 }
 
 .hovereffect {
@@ -153,7 +164,7 @@ body {
 /* FOOTER */
 
 footer {
-    padding: 2% 15%;    
+    padding: 2% 10%;    
     background-color: darkblue;
     color: #f1f1f1dc;
 }
