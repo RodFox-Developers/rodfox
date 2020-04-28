@@ -207,6 +207,24 @@ footer a:hover {
         max-width: 100%;
     }
     #header-cover {    
-        background: url('../images/rodfox-cover-mobil.jpg') no-repeat center center fixed;
+        background: url('../images/rodfox-cover-mobil.jpg') no-repeat left center fixed;
+        background-color: white;
+        height: 70vh;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 500px) {    
+    #header-cover {    
+        background: url('../images/rodfox-cover-mobil.jpg') no-repeat center center;
+        background-color: white;
+        height: 70vh;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 }
