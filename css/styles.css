@@ -8,8 +8,12 @@ body {
 
 /*NAVIGATION BAR*/
 
-#nav-bar {
+.header {
     margin: 0; 
+}
+
+.navbar {
+    transition: all 0.4s;
 }
 
 .nav-item {
@@ -18,12 +22,13 @@ body {
 
 .nav-link {    
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
-    font-weight: 500;     
+    font-weight: 500;         
 }
 
 .img-logo {
     width: 80%;   
 }
+
 
 /* HEADER COVER */
 
@@ -103,6 +108,11 @@ body {
 
 #projects {
     padding: 8% 10%;  
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../images/html-code-0.jpg);   
+    -webkit-background-size: initial;
+    -moz-background-size: initial;
+    -o-background-size: initial;
+    background-size: initial;    
 }
 
 .hovereffect {
@@ -227,4 +237,11 @@ footer a:hover {
         -o-background-size: cover;
         background-size: cover;
     }
+}
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #33393F;
+    }     
 }

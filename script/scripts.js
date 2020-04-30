@@ -32,4 +32,21 @@ showLessBtn.onclick = function() {
   divProjects.classList.add('d-none');
 }
 
+$(function () {
+  $(window).on('scroll', function () {
+      if ( $(window).scrollTop() > 10 ) {          
+          $('.navbar').addClass('navbar-light');
+          $('.navbar').removeClass('navbar-dark');
+          $('.navbar').addClass('bg-light');
+          $('#logo-dark').addClass('d-none');
+          $('#logo-light').removeClass('d-none');
+      } else {          
+          $('.navbar').addClass('navbar-dark');
+          $('.navbar').removeClass('navbar-light');
+          $('.navbar').removeClass('bg-light');
+          $('#logo-dark').removeClass('d-none');
+          $('#logo-light').addClass('d-none');
+      }
+  });
+});
 
