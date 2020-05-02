@@ -1,14 +1,15 @@
 body {
-    font-family: 'Montserrat';    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
 }
 
 .main-container {
     padding: 0;
 }
 
+
 /*NAVIGATION BAR*/
 
-.header {
+.navbar-header {
     margin: 0; 
 }
 
@@ -20,8 +21,7 @@ body {
     padding: 0 50px;        
 }
 
-.nav-link {    
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+.nav-link {        
     font-weight: 500;         
 }
 
@@ -34,13 +34,23 @@ body {
 
 #header-cover {    
     background: url('../images/rodfox-cover.jpg') no-repeat center center fixed;
-    background-color: white;
-    height: 70vh;
+    background-color: grey;
+    height: 100vh;
+    -ms-background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover;    
+    color: white; 
+    padding: 8% 3% 0;  
 }
+
+/* CONTACT FORM */
+
+.contact-form {    
+    background: linear-gradient( rgba(255,255,255,0.6), rgba(255,255,255,0.6)); 
+}
+
 
 /* COMPANY */
 
@@ -53,8 +63,9 @@ body {
 
 .company-title {
     font-size: 3.5rem;
-    font-weight: bold;
-    margin-top: -7%;
+    font-weight: bold;  
+    font-family: 'Capriola', sans-serif;
+    text-shadow: 5px 5px #10798A;    
 }
 
 .company-p {
@@ -68,7 +79,8 @@ body {
 #services {
     padding: 3% 10%;  
     background: url('../images/background-services.png') no-repeat center center;
-    background-color:rgba(255, 255, 255);    
+    background-color:rgba(255, 255, 255); 
+    -ms-background-size: initial;   
     -webkit-background-size: initial;
     -moz-background-size: initial;
     -o-background-size: initial;
@@ -108,7 +120,8 @@ body {
 
 #projects {
     padding: 8% 10%;  
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../images/html-code-0.jpg);   
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../images/html-code-0.jpg);
+    -ms-background-size: initial;  
     -webkit-background-size: initial;
     -moz-background-size: initial;
     -o-background-size: initial;
@@ -175,17 +188,19 @@ body {
 /* FOOTER */
 
 footer {
-    padding: 2% 10%;    
-    background-color: darkblue;
+    background: linear-gradient(rgba(0, 0, 255, 0.7), rgba(0, 0, 255, 0.7)), url(../images/contact-map.jpg) no-repeat center center fixed;    
+    height: 100vh;
+    -ms-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 3% 5%;    
     color: #f1f1f1dc;
 }
 
-footer .logo {
-    width: 100px;    
-}
-
 footer a {
-    color: #f1f1f1a8;
+    color: #f1f1f1dc;
     text-decoration: none;
 }
 
@@ -207,35 +222,45 @@ footer a:hover {
     .company-title {
         font-size: 2.5rem;
     }
+    #header-cover {
+        padding: 12% 3% 0; 
+    }
 }
   
-@media only screen and (max-width: 750px) {
-    .company-title {
-        margin-top: -30%;
-    }
+@media only screen and (max-width: 750px) {    
     .img-design {
         max-width: 100%;
     }
     #header-cover {    
         background: url('../images/rodfox-cover-mobil.jpg') no-repeat left center fixed;
-        background-color: white;
-        height: 70vh;
+        background-color: blue;
+        height: 100vh;
+        -ms-background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        padding: 15% 3% 0; 
     }
 }
 
 @media only screen and (max-width: 500px) {    
     #header-cover {    
         background: url('../images/rodfox-cover-mobil.jpg') no-repeat center center;
-        background-color: white;
-        height: 70vh;
+        background-color: blue;
+        height: 100vh;
+        -ms-background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        padding: 25% 3% 0; 
+    }
+    .company-title {
+        font-size: 2.2rem;
+    }
+    .contact-title h2 {
+        font-size: 1.5em;
     }
 }
 

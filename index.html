@@ -4,15 +4,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="We will Design & Develop your website, we create the most amazing designs and deliver Front-End & Back-End services, our team will make true all your ideas and needs.">
-    
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu:400,700" rel="stylesheet">
-    
+    <meta name="description" content="We will Design & Develop your website, we create the most amazing designs and deliver Front-End & Back-End services, our team will make true all your ideas and needs.">  
+    <!-- Google Fonts -->  
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Raleway:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="icon" href="images/rodfox-favicon.png">
     <link rel="stylesheet" href="css/styles.css">
@@ -23,7 +20,7 @@
 
       <!--NAVBAR-->
       <header>
-        <section class="header">
+        <section class="navbar-header">
           <nav class="navbar navbar-expand-lg navbar-dark fixed-top animated bounceInDown slow">
             <a class="navbar-brand" href="#">
               <img id="logo-dark" class="img-logo" src="images/rodfox-logo-dark.png" alt="rodfox Web Design and Development">
@@ -32,7 +29,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
               <ul class="navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link active" href="#"><i class="fas fa-home mr-1"></i>Home</a>
@@ -44,7 +41,7 @@
                   <a class="nav-link active" href="#projects"><i class="fas fa-briefcase mr-1"></i>Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#contacts"><i class="far fa-envelope mr-1"></i>Contacts</a>
+                  <button class="nav-link active btn btn-info px-3" data-toggle="modal" data-target="#exampleModalCenter"><i class="far fa-envelope mr-1"></i>Contact us</button>
                 </li>
               </ul>
             </div>
@@ -53,19 +50,56 @@
     
       <!--HEADER COVER-->
     
-        <section id="header-cover"></section>
+        <section id="header-cover">
+                            
+          <div class="row justify-content-end">
+            <div class="col-12 text-center text-md-right contact-title">
+              <h2 class="wow lightSpeedIn slow">Do you need assistance with your Website?</h2>                             
+            </div>
+          </div>  
+          <div class="row justify-content-end px-5 mt-3">
+            <div class="col-md-4 text-center">                 
+              <!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
+              <form action='https://forms.zohopublic.eu/rcevas/form/ContactForm/formperma/AB3RqVVAQkJJ9zOJatcpKWQuX_z8OB2mbOvEmENqJkI/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+                <div class="form-group row justify-content-center">
+                  <input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+                  <input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+                  <input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+                  <div class="col-12">
+                    <h4 class="text-light bg-info rounded py-1">Contact Us</h4>
+                  </div>                                               
+                  <div class="col-12">
+                    <!--Name--> 
+                    <input class="form-control contact-form" placeholder="First name *" type="text" maxlength="255" name="Name_First" fieldType=7/>             
+                    <input class="form-control my-2 contact-form" placeholder="Last name *" type="text" maxlength="255" name="Name_Last" fieldType=7 />                
+                    <!--Email-->                 
+                    <input class="form-control contact-form" placeholder="Email *" type="text" maxlength="255" name="Email" value="" fieldType=9 />
+                    <!--Multi Line-->                  
+                    <textarea placeholder="Leave us a few words *" class="form-control my-2 contact-form" rows="3" name="MultiLine" maxlength="65535" class="form-control-plaintext"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-success my-2 px-5" type="submit"><em>Submit</em></button>
+                  </div>
+                </div>
+              </form>
+            </div>                
+          </div>
+          <div class="row">
+            <div class="col-lg-12 wow slideInUp slow">
+              <h1 class="company-title text-center">
+                Web Design & Development
+              </h1>
+            </div>
+          </div>
+          
+        </section>
       </header>
       <!-- COMPANY -->
       <main>
         <section id="company">        
-          <div class="row justify-content-center wow slideInUp slow">
-            <div class="col-12">
-              <h1 class="company-title">
-                WEB DESIGN AND DEVELOPMENT
-              </h1>
-            </div>
+          <div class="row justify-content-center wow slideInUp slow">            
             <div class="col-8">
-              <p class="company-p">RodFox is a Web Desing and Development Agency powered by creative and passionate people. We believe in building strong brands, awesomes design and develop a good clean code and well commented to be used for other developers.</p>
+              <p class="company-p">RodFox is a Web Desing and Development Agency powered by creative and passionate people. We believe in building strong brands, awesomes design and develop a good clean code that load fast and rank extremely well on search engines.</p>
               <p class="company-p">We provide a wide array of web services, using industry leading technologies, harness the power of modern web frameworks to build progressive web apps that scale, our team will make true all your ideas and needs.</p>
             </div>
           </div>        
@@ -214,23 +248,100 @@
           </div>
           <div class="row">
             <div class="col-12 text-center">
-              <a id="btnProject" class="btn btn-info" role="button">Show more</a>
-              <a id="showLessBtn" class="btn btn-info d-none" role="button">Show less</a>
+              <a id="btnProject" class="btn btn-info text-white" role="button">Show more</a>
+              <a id="showLessBtn" class="btn btn-info text-white d-none" role="button">Show less</a>
             </div>
           </div>
         </section>
       </main>
-      <footer id="contacts">        
-        <div class="row justify-content-center">
-          <div class="col-12 text-center">            
-            <img src="images/rodfox-logo-dark.png" alt="rodfox Web Design and Development" class="logo wow flip slow">
-            <p class="my-1 small">Copyright &copy; 2020, RodFox. All rights reserved.</p>
-          </div>
-          <div class="col-12 text-center">            
+      <footer id="contacts">  
+        <div class="row align-items-center"> 
+          <div class="col-12 text-center py-5">
+            <a href="https://www.facebook.com/RodFox-Web-Development-100228831684321"><i class="fab fa-facebook mr-5 fa-3x"></i></a>            
+            <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>
+            <a href="#"><i class="fab fa-instagram mx-5 fa-3x"></i></a>
+            <a href="mailto:developers@rodfox.net"><i class="far fa-envelope fa-3x"></i></a>            
+          </div>         
+          <div class="col-lg-6 text-center"> 
+            <div class="row">
+              <div class="col-12 mb-2">
+                <img src="images/rodfox-logo-dark.png" alt="rodfox Web Design and Development" class="logo mx-auto wow flip slow"> 
+              </div>
+            </div>
+            <h5 class="my-5">Web Design and Development</h5>  
+            <address>Passeig de la Zona Franca, 226</address>
+            <address>Barcelona, Spain</address>                                        
             <a href="mailto:developers@rodfox.net" class="text-center small"><i class="far fa-envelope mr-2"></i>developers@rodfox.net</a>
+          </div>
+          <div class="col-lg-6 text-center">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success px-5 py-3 mt-3" data-toggle="modal" data-target="#exampleModalCenter">
+              Contact us
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content bg-primary p-5">
+                  <!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
+                  <form action='https://forms.zohopublic.eu/rcevas/form/ContactForm/formperma/AB3RqVVAQkJJ9zOJatcpKWQuX_z8OB2mbOvEmENqJkI/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+                    <div class="form-group row justify-content-center">
+                      <input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+                      <input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+                      <input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+                      <div class="col-12"></div>
+                        <h2>Contact Us</h2>
+                      </div>
+                      <div class="col-12">
+                        <p>Please fill out the form, we will in touch with you shortly.</p>
+                      </div>                               
+                      <div class="col-sm-12">
+                        <!--Name--> 
+                        <input class="form-control" placeholder="First name *" type="text" maxlength="255" name="Name_First" fieldType=7/>             
+                        <input class="form-control my-2" placeholder="Last name *" type="text" maxlength="255" name="Name_Last" fieldType=7 />                
+                        <!--Email-->                 
+                        <input class="form-control" placeholder="Email *" type="text" maxlength="255" name="Email" value="" fieldType=9 />
+                        <!--Multi Line-->                  
+                        <textarea placeholder="Leave us a few words *" class="form-control my-2" rows="3" name="MultiLine" maxlength="65535" class="form-control-plaintext"></textarea>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn btn-success my-2 px-5" type="submit"><em>Submit</em></button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>                     
+          </div>
+          <div class="col-lg-12 text-center mt-5 copyright">
+            <p class="my-1 small">Copyright &copy; 2020, RodFox. All rights reserved.</p> 
           </div>
         </div>
       </footer>
+
+      <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v6.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="100228831684321">
+      </div>
       
     </div>
 
