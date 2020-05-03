@@ -42,13 +42,11 @@ body {
     -o-background-size: cover;
     background-size: cover;    
     color: white; 
-    padding: 8% 3% 0;  
+    padding: 10% 3% 0;  
 }
 
-/* CONTACT FORM */
-
-.contact-form {    
-    background: linear-gradient( rgba(255,255,255,0.6), rgba(255,255,255,0.6)); 
+.zoho-form a {
+    font-size: 1.4rem;
 }
 
 
@@ -65,7 +63,8 @@ body {
     font-size: 3.5rem;
     font-weight: bold;  
     font-family: 'Capriola', sans-serif;
-    text-shadow: 5px 5px #10798A;    
+    text-shadow: 5px 5px #10798A; 
+    margin-top: 15vh;   
 }
 
 .company-p {
@@ -223,7 +222,7 @@ footer a:hover {
         font-size: 2.5rem;
     }
     #header-cover {
-        padding: 12% 3% 0; 
+        padding: 15% 3% 0; 
     }
 }
   
@@ -240,7 +239,7 @@ footer a:hover {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        padding: 15% 3% 0; 
+        padding: 20% 3% 0; 
     }
 }
 
@@ -254,7 +253,7 @@ footer a:hover {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        padding: 25% 3% 0; 
+        padding: 30% 3% 0; 
     }
     .company-title {
         font-size: 2.2rem;
