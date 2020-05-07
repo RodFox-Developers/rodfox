@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
 }
@@ -33,9 +37,8 @@ body {
 /* HEADER COVER */
 
 #header-cover {    
-    background: url('../images/rodfox-cover.jpg') no-repeat center center fixed;
-    background-color: grey;
-    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 255, 0), rgba(0, 0, 255, 0), rgba(0, 0, 255, 0), rgba(0, 0, 255, 0), rgba(0, 0, 255, 0), rgba(255, 255, 255, 1)), url('../images/rodfox-cover.jpg') no-repeat center center fixed;
+    height: 100%;
     -ms-background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -52,11 +55,21 @@ body {
 
 /* COMPANY */
 
-#company {
-    background-color: #1C1966;
-    color: white;
-    padding: 3%;
+#company {    
+    padding: 0 3%;
     text-align: center;
+    font-size: 1.2rem;
+}
+
+#company .border {
+    box-shadow: 5px 5px 5px 5px #888888;
+    margin-top: -8%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url(../images/design-bg.jpg) no-repeat center center;
+    -ms-background-size: cover;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;       
 }
 
 .company-title {
@@ -64,12 +77,11 @@ body {
     font-weight: bold;  
     font-family: 'Capriola', sans-serif;
     text-shadow: 5px 5px #10798A; 
-    margin-top: 15vh;   
+    margin-bottom: 35vh;   
 }
 
 .company-p {
-    margin: 3% 0 0;
-    font-size: 1.1rem;
+    padding-left: 50%;
 }
 
 
@@ -231,9 +243,8 @@ footer a:hover {
         max-width: 100%;
     }
     #header-cover {    
-        background: url('../images/rodfox-cover-mobil.jpg') no-repeat left center fixed;
-        background-color: blue;
-        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 255, 0), rgba(0, 0, 255, 0), rgba(0, 0, 255, 0), rgba(0, 0, 255, 0), rgba(0, 0, 255, 0), rgba(255, 255, 255, 1)), url('../images/rodfox-cover-mobil.jpg') no-repeat left center fixed;        
+        height: 100%;
         -ms-background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -241,19 +252,30 @@ footer a:hover {
         background-size: cover;
         padding: 20% 3% 0; 
     }
+    #company .border {       
+        margin-top: -15%;
+    }
+    .company-p {
+        padding-left: unset;
+    }
 }
 
 @media only screen and (max-width: 500px) {    
     #header-cover {    
-        background: url('../images/rodfox-cover-mobil.jpg') no-repeat center center;
-        background-color: blue;
-        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 255, 0), rgba(0, 0, 255, 0), rgba(0, 0, 255, 0), rgba(0, 0, 255, 0), rgba(0, 0, 255, 0), rgba(255, 255, 255, 1)), url('../images/rodfox-cover-mobil.jpg') no-repeat center center;        
+        height: 100%;
         -ms-background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
         padding: 30% 3% 0; 
+    }
+    #company {
+        font-size: 1rem;
+    }
+    #company .border {       
+        margin-top: -20%;
     }
     .company-title {
         font-size: 2.2rem;
