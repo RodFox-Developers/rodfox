@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Web Design & Development | RodFox</title>
   </head>
-  <body>    
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">    
     <div class="container-fluid main-container">
 
       <!--NAVBAR-->
@@ -32,16 +32,16 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#"><i class="fas fa-home mr-1"></i>Home</a>
+                  <a class="nav-link active" href="#home"><i class="fas fa-home mr-1"></i>Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#services"><i class="fas fa-pencil-ruler mr-1"></i>Services</a>
+                  <a class="nav-link" href="#services"><i class="fas fa-pencil-ruler mr-1"></i>Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#projects"><i class="fas fa-briefcase mr-1"></i>Projects</a>
+                  <a class="nav-link" href="#projects"><i class="fas fa-briefcase mr-1"></i>Projects</a>
                 </li>
                 <li class="nav-item">
-                  <button class="nav-link active contact-modal btn btn-info px-3" data-toggle="modal" data-target="#exampleModalCenter"><i class="far fa-envelope mr-1"></i>Contact us</button>
+                  <button class="nav-link text-white contact-modal btn btn-info px-3" data-toggle="modal" data-target="#exampleModalCenter"><i class="far fa-envelope mr-1"></i>Contact us</button>
                 </li>
               </ul>
             </div>
@@ -50,7 +50,7 @@
     
       <!--HEADER COVER-->
     
-        <section id="header-cover">
+        <section id="home">
                             
           <div class="row">
             <div class="col-12 text-center contact-title">
